@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+/* line 5, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 30, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+body {
+  line-height: 1; }
+
+/* line 33, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+ol, ul {
+  list-style: none; }
+
+/* line 36, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+blockquote, q {
+  quotes: none; }
+
+/* line 39, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 44, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 47, /Users/eugene_chayka/Desktop/Uranos/sass/_reset.sass */
+a {
+  text-decoration: none; }
+
+/* line 6, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.header__container, .main__container {
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    /* line 6, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+    .header__container, .main__container {
+      width: 750px; } }
+  @media (max-width: 1200px) {
+    /* line 10, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+    .header__container .main__offer::after, .main__container .main__offer::after {
+      display: none; } }
+  @media (min-width: 992px) {
+    /* line 6, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+    .header__container, .main__container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    /* line 6, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+    .header__container, .main__container {
+      width: 1170px; } }
+  @media (max-width: 992px) {
+    /* line 17, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+    .header__container .nav__item, .main__container .nav__item {
+      display: none; } }
+
+/* line 23, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* line 39, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+body {
+  overflow-x: hidden;
+  font-weight: 300; }
+
+/* line 45, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 500; }
+  /* line 52, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .header__container {
+    height: 83px;
+    line-height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px; }
+  /* line 62, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .header__logobox {
+    font-size: 0px;
+    display: flex;
+    align-items: flex-end; }
+  /* line 66, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .header__logoname {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 5px; }
+  /* line 73, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .header__logo {
+    color: #070b18;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 52px;
+    height: 26px;
+    border-radius: 3px;
+    background-color: #ffd800;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 5px; }
+  /* line 87, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .header:before {
+    content: '';
+    height: 8px;
+    width: 100%;
+    background-color: #ffd800;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  /* line 95, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .header__nav {
+    height: 45px; }
+
+/* line 99, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.nav {
+  font-size: 0; }
+  /* line 101, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .nav__list {
+    display: inline-block;
+    height: 45px; }
+  /* line 104, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .nav__item {
+    padding: 0 23px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff; }
+    /* line 112, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+    .nav__item:hover {
+      background-color: #ffd800;
+      border-radius: 3px;
+      color: #060915; }
+
+/* line 120, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__container {
+  color: white; }
+
+/* line 127, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__content {
+  width: 730px;
+  height: 625px;
+  margin: 255px auto 0;
+  text-align: center; }
+  /* line 132, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .main__content:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 100%;
+    height: 880px;
+    background-image: url("../img/bg.png");
+    background-position: center;
+    z-index: -2; }
+
+/* line 142, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: -1.5px; }
+  /* line 147, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .main__title > span {
+    font-weight: 500; }
+
+/* line 149, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__register {
+  margin-top: 70px;
+  font-size: 0; }
+
+/* line 152, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__input {
+  height: 65px;
+  width: 225px;
+  opacity: 0.5;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: solid 2px #ffffff;
+  margin-right: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  padding: 26px;
+  box-sizing: border-box;
+  text-transform: uppercase; }
+  /* line 168, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .main__input--password {
+    width: 216px; }
+
+/* line 170, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__btn {
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #ffd800;
+  width: 161px;
+  height: 65px;
+  line-height: 65px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #080e17;
+  vertical-align: top; }
+
+/* line 184, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__offer {
+  position: relative;
+  text-align: center;
+  height: 660px; }
+  /* line 188, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .main__offer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 660px;
+    background-color: #191b29;
+    z-index: -2; }
+  /* line 198, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+  .main__offer:after {
+    content: '';
+    position: absolute;
+    bottom: 21px;
+    transform: translateX(-50%);
+    width: 447px;
+    height: 784px;
+    background-image: url("../img/phone.png");
+    background-position: center; }
+
+/* line 209, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__list {
+  padding-top: 110px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+/* line 216, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__item {
+  text-align: left;
+  width: 350px;
+  padding: 32px; }
+
+/* line 220, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__name {
+  width: 270px;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  display: inline-block; }
+
+/* line 226, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__description {
+  text-align: left;
+  margin-top: 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+
+/* line 233, /Users/eugene_chayka/Desktop/Uranos/sass/main.sass */
+.main__header {
+  vertical-align: middle;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 60px; }
+
+/*# sourceMappingURL=../css/main.map */

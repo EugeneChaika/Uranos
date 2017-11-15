@@ -1,0 +1,238 @@
+@import "reset"
+$text_color: #ffffff
+$roboto: 'Roboto', sans-serif
+$hover: #060915
+
+%container
+  @media (min-width: 768px)
+    width: 750px
+  @media (max-width: 1200px)
+    .main__offer::after
+      display: none
+  @media (min-width: 992px)
+    width: 970px
+  @media (min-width: 1200px)
+    width: 1170px
+  @media (max-width: 992px)
+    .nav__item
+      display: none
+
+  margin: 0 auto
+
+
+%btn
+  display: inline-block
+  cursor: pointer
+  border: none
+  padding: 0
+  text-transform: uppercase
+  font-weight: 700
+
+%section
+  padding: 80px 0
+
+%section_title
+  font-size: 40px
+  >span
+    font-weight: 700
+
+body
+  overflow-x: hidden
+  font-weight: 300
+
+
+//header
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background-color: transparent
+  z-index: 500
+  &__container
+    @extend %container
+    height: 83px
+    line-height: 45px
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    // background-color: silver
+    margin-top: 10px
+  &__logobox
+    font-size: 0px
+    display: flex
+    align-items: flex-end
+  &__logoname
+    font-family: $roboto
+    font-size: 36px
+    font-weight: 500
+    text-transform: uppercase
+    color: $text_color
+    margin-bottom: 5px
+  &__logo
+    color: #070b18
+    font-family: $roboto
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    width: 52px
+    height: 26px
+    border-radius: 3px
+    background-color: #ffd800
+    line-height: 26px
+    text-align: center
+    margin-left: 10px
+    margin-bottom: 5px
+  &:before
+    content: ''
+    height: 8px
+    width: 100%
+    background-color: #ffd800
+    position: absolute
+    top: 0
+    right: 0
+  &__nav
+    height: 45px
+
+
+.nav
+  font-size: 0
+  &__list
+    display: inline-block
+    height: 45px
+  &__item
+    padding: 0 23px
+    display: inline-block
+    font-family: $roboto
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    color: #fff
+    &:hover
+      background-color: #ffd800
+      border-radius: 3px
+      color: #060915
+
+.main
+  // height: 1080px
+  // position: relative
+  &__container
+    @extend %container
+    // display: flex
+    //align-items: center
+    color: white
+    //height: 100%
+    //box-sizing: border-box
+  &__content
+    width: 730px
+    height: 625px
+    margin: 255px auto 0
+    text-align: center
+    &:after
+      content: ''
+      position: absolute
+      top: 8px
+      right: 0
+      width: 100%
+      height: 880px
+      background-image: url('../img/bg.png')
+      background-position: center
+      z-index: -2
+  &__title
+    font-family: $roboto
+    font-size: 60px
+    font-weight: 100
+    letter-spacing: -1.5px
+    >span
+      font-weight: 500
+  &__register
+    margin-top: 70px
+    font-size: 0
+  &__input
+    height: 65px
+    width: 225px
+    opacity: 0.5
+    border-radius: 3px
+    background-color: rgba(255, 255, 255, 0.4)
+    border: solid 2px #ffffff
+    margin-right: 15px
+    font-family: $roboto
+    font-size: 14px
+    font-weight: bold
+    text-align: left
+    color: rgba(255, 255, 255, 1)
+    padding: 26px
+    box-sizing: border-box
+    text-transform: uppercase
+    &--password
+      width: 216px
+  &__btn
+    @extend %btn
+    box-sizing: border-box
+    border-radius: 3px
+    background-color: #ffd800
+    width: 161px
+    height: 65px
+    line-height: 65px
+    font-family: Roboto
+    font-size: 18px
+    font-weight: bold
+    text-align: center
+    color: #080e17
+    vertical-align: top
+  &__offer
+    position: relative
+    text-align: center
+    height: 660px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      //right: 0
+      transform: translateX(-50%)
+      width: 100vw
+      height: 660px
+      background-color: #191b29
+      z-index: -2
+    &:after
+      content: ''
+      position: absolute
+      bottom: 21px
+      //right: 0
+      transform: translateX(-50%)
+      width: 447px
+      height: 784px
+      background-image: url('../img/phone.png')
+      background-position: center
+      //z-index: -1
+  &__list
+    padding-top: 110px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    // flex-direction: column
+    justify-content: space-between
+  &__item
+    text-align: left
+    width: 350px
+    padding: 32px
+  &__name
+    width: 270px
+    font-family: $roboto
+    font-size: 36px
+    font-weight: 300
+    display: inline-block
+  &__description
+    text-align: left
+    margin-top: 32px
+    font-family: $roboto
+    font-size: 16px
+    font-weight: 300
+  &__icon
+  &__header
+    vertical-align: middle
+    justify-content: space-between
+    display: flex
+    align-items: center
+    height: 60px
